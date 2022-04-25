@@ -1,0 +1,51 @@
+/*table start*/
+.airport-table {
+    font-family: 'VT323', monospace;
+    color: #fff;
+    background: #303030;
+    border-radius: 0.2em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow: hidden;
+    width: 100%;
+    text-shadow: white;
+    text-shadow: 0 0 0.50em;
+}
+
+td, th {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 8px;
+    border: 1px solid black;
+    position: relative;
+}
+th {
+    color: yellow;
+    font-size: 1.4em;
+    text-shadow: yellow;
+    text-shadow: 0 0 0.50em;
+}
+/*tr:nth-child(even) {
+    background-color: #303030;
+}*/
+/*table end*/
+
+/*animation start*/
+.flip-anim {
+    position: relative;
+}
+
+.flip-anim span {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 6s infinite;
+    animation-delay: calc(.2s * var(--i))
+}
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+}
+/*animation end*/
